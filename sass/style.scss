@@ -32,7 +32,7 @@ section {
   }
 }
 .banner {
-  height: 100vh;
+  height: 75vh;
   position: relative;
   padding: 0;
   .sumbers {
@@ -65,6 +65,16 @@ section {
     width: 100%;
     &__item {
       margin-bottom: 8px;
+      position: relative;
+      .details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        backdrop-filter: blur(8px);
+        color: white;
+      }
       // border: 1px solid;
     }
   }
