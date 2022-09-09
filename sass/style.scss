@@ -150,6 +150,7 @@ section {
         bottom: initial;
         top: 20%;
         left: -20%;
+        animation: MoveDown 7.5s linear infinite;
       }
 
       &.right {
@@ -157,6 +158,20 @@ section {
         top: 5%;
         left: initial;
         right: -30%;
+      }
+
+      @keyframes MoveDown {
+
+        0%,
+        100% {
+          top: 20%;
+        }
+
+
+
+        50% {
+          top: 25%;
+        }
       }
 
       img {
@@ -211,6 +226,10 @@ section {
         transform-origin: left;
         transform: perspective(2000px) rotateY(-90deg);
         padding: 8px;
+
+        small {
+          color: #6a3f00;
+        }
 
         p {
           @media screen and (max-width:766px) {
@@ -654,9 +673,7 @@ section {
       height: 320px;
       position: relative;
 
-      small {
-        color: #6a3f00;
-      }
+
 
       @media screen and (min-width:1440px) {
         height: 420px;
