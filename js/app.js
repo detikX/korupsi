@@ -73,6 +73,7 @@ $.ajax({
       var ex = response[a].ex;
       var short = response[a].short;
       var img = response[a].img;
+      var hukuman = response[a].hukuman;
       $(".grid").append(
         `
         <div class="grid__item">
@@ -80,6 +81,7 @@ $.ajax({
           <div class="details">
             <div class="name">${name}</div>
             <div class="ex">${ex}</div>
+            <small>${hukuman} Penjara</small>
             <hr>
             <p>${short}</p>
             <button class="btn btn-modal namaKoruptor" data-toggle="modal" data-target="#modalKoruptor" data-id="${id_}">Simak Kasusnya</button>

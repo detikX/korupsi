@@ -5,7 +5,8 @@
     "ex": "Jaksa",
     "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/1.jpeg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "ex": "Gubernur Banten",
     "short": "Eks Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/2.jpg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "ex": "Jaksa",
     "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/3.jpg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "ex": "Direktur Utama PT Jasa Marga",
     "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/4.jpg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "ex": "Bupati Indramayu",
     "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/10.jpeg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "ex": "Direktur Utama PT Jasa Marga",
     "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/5.jpg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "ex": "Menteri Agama",
     "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/6.jpeg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "ex": "Gubernur Jambi",
     "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/7.jpg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "ex": "Bupati Subang",
     "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/8.jpg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   },
   {
     "id": 10,
@@ -77,6 +86,7 @@
     "ex": "Bupati Cianjur",
     "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
     "img": "img/9.jpeg",
-    "modal": "<p>Lorem ipsum</p>"
+    "modal": "<p>Lorem ipsum</p>",
+    "hukuman": "8 Tahun"
   }
 ]
