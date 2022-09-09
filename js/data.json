@@ -1,63 +1,82 @@
 [
   {
-    "id":1,
-    "nama":"Pinangki Sirna Malasari",
-    "ex":"Jaksa",
-    "short":"Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 1,
+    "nama": "Pinangki Sirna Malasari",
+    "ex": "Jaksa",
+    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/1.jpeg",
+    "modal": "<p>Lorem ipsum</p>"
   },
   {
-    "id":2,
-    "nama":"Ratu Atut Chosiyah",
-    "ex":"Gubernur Banten",
-    "short":"Eks Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 2,
+    "nama": "Ratu Atut Chosiyah",
+    "ex": "Gubernur Banten",
+    "short": "Eks Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/2.jpg",
+    "modal": "<p>Lorem ipsum</p>"
   },
   {
-    "id":3,
-    "nama":"Mirwati Basri",
-    "ex":"Jaksa",
-    "short":"Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 3,
+    "nama": "Mirwati Basri",
+    "ex": "Jaksa",
+    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/3.jpg",
+    "modal": "<p>Lorem ipsum</p>"
   },
   {
-    "id":4,
-    "nama":"Desi Aryani",
-    "ex":"Direktur Utama PT Jasa Marga",
-    "short":"Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 4,
+    "nama": "Desi Aryani",
+    "ex": "Direktur Utama PT Jasa Marga",
+    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/4.jpg",
+    "modal": "<p>Lorem ipsum</p>"
   },
   {
-    "id":5,
-    "nama":"Supendi",
-    "ex":"Bupati Indramayu",
-    "short":"Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 5,
+    "nama": "Supendi",
+    "ex": "Bupati Indramayu",
+    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/10.jpeg",
+    "modal": "<p>Lorem ipsum</p>"
   },
   {
-    "id":6,
-    "nama":"Patrialis Akbar",
-    "ex":"Direktur Utama PT Jasa Marga",
-    "short":"Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 6,
+    "nama": "Patrialis Akbar",
+    "ex": "Direktur Utama PT Jasa Marga",
+    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/5.jpg",
+    "modal": "<p>Lorem ipsum</p>"
   },
   {
-    "id":7,
-    "nama":"Suryadharma Ali",
-    "ex":"Menteri Agama",
-    "short":"Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 7,
+    "nama": "Suryadharma Ali",
+    "ex": "Menteri Agama",
+    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/6.jpeg",
+    "modal": "<p>Lorem ipsum</p>"
   },
   {
-    "id":8,
-    "nama":"Zumi Zola",
-    "ex":"Gubernur Jambi",
-    "short":"Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 8,
+    "nama": "Zumi Zola",
+    "ex": "Gubernur Jambi",
+    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/7.jpg",
+    "modal": "<p>Lorem ipsum</p>"
   },
   {
-    "id":9,
-    "nama":"Ojang",
-    "ex":"Bupati Subang",
-    "short":"Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 9,
+    "nama": "Ojang",
+    "ex": "Bupati Subang",
+    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/8.jpg",
+    "modal": "<p>Lorem ipsum</p>"
   },
   {
-    "id":10,
-    "nama":"Irvan Rivano Muchtar",
-    "ex":"Bupati Cianjur",
-    "short":"Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro"
+    "id": 10,
+    "nama": "Irvan Rivano Muchtar",
+    "ex": "Bupati Cianjur",
+    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "img": "img/9.jpeg",
+    "modal": "<p>Lorem ipsum</p>"
   }
-
 ]

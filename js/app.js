@@ -61,151 +61,112 @@ $(() => {
   */
 });
 
-// $.ajax({
-//   url: "https://raw.githubusercontent.com/owid/monkeypox/main/owid-monkeypox-data.csv",
-//   dataType: "text",
-//   beforeSend: function(){
-//     $(".loading").show();
-//     $('.dataapi').hide();
-//   },
-//   complete: function(){
-//       $(".loading").hide();
-//       $('.dataapi').show();
-//   },
-//   success: (response) => {
-//     /* console.log(response) */
-//     var api_ = $.csv.toObjects(response);
-//     var a;
-//     // console.log(api_[api_.length - 1]);
-//     // for (a = 0; a < api_.length; a++) {
-//     var world = api_[api_.length - 1];
-//     console.log(world);
-//     var date_ = world.date;
-//     var newCase = world.new_cases;
-//     var total_cases = world.total_cases;
+$.ajax({
+  url: 'js/data.json',
+  type: 'GET',
+  success: ((response) => {
+    // console.log(response);
+    var a;
+    for (a = 0; a < response.length; a++) {
+      var id_ = response[a].id;
+      var name = response[a].nama;
+      var ex = response[a].ex;
+      var short = response[a].short;
+      var img = response[a].img;
+      $(".grid").append(
+        `
+        <div class="grid__item">
+          <div class="image"><img src="${img}"></div>
+          <div class="details">
+            <div class="name">${name}</div>
+            <div class="ex">${ex}</div>
+            <hr>
+            <p>${short}</p>
+            <button class="btn btn-modal namaKoruptor" data-toggle="modal" data-target="#modalKoruptor" data-id="${id_}">Simak Kasusnya</button>
+          </div>
+        </div>
+        `
+      )
+    }
+
+    $(".namaKoruptor[data-target='#modalKoruptor']").on("click", function (i, x) {
+      var dataID = $(this).attr("data-id") - 1;
+      // console.log(dataID);
+      // console.log(response[dataID].modal);
+      var modal = response[dataID].modal;
+      var img = response[dataID].img;
+      var ex = response[dataID].ex;
+      var namanya = response[dataID].nama;
+      // var sumber = response[dataID].sumber;
+      // <div class="modal-image"><img src="${img}" alt="${namanya}" title="${namanya}" loading="lazy" /></div>
+      //           <p class="font-stdbig">${modal}</p>
+      $("#modalKoruptor").modal("show");
+
+      $("#modalKoruptor .modal-content").html(`
+            <div class="modal-body">
+            <div class="block-content t-block-teal l-block-spacing">
+            <header class="heading-group">
+              <div class="image-org">
+                <img src="${img}">
+              </div>
+              <h2>${ex}</h2>
+              <p class="subtitle">
+                ${namanya}
+              </p>
+            </header>
+            <div class="l-contained">
+                <ul class="timeline-list">
+                  <li>
+                      <div class="content">
+                    <h3>A timeline?</h3>
+                
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
+                    </p>
+                    </div>
+                  </li>
+                  <li>
+                      <div class="content">
+                    <h3>A railway map?</h3>
+                  
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
+                    </p>
+                    </div>
+                  </li>
+                  <li>
+                      <div class="content">
+                    <h3>Random dots?</h3>
+                  
+                
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
+                    </p>
+                    </div>
+                  </li>
+                  
     
-//     var adeath = world.total_deaths;
-//     var death = parseFloat(adeath.replace(/,/g, ""));
-
-//     var monthWording = {
-//       "01": "Januari",
-//       "02": "Februari",
-//       "03": "Maret",
-//       "04": "April",
-//       "05": "Mei",
-//       "06": "Juni",
-//       "07": "Juli",
-//       "08": "Agustus",
-//       "09": "September",
-//       "10": "Oktober",
-//       "11": "November",
-//       "12": "Desember",
-//     };
-//     var year = date_.slice(0, 4);
-//     var month = date_.slice(5, 7);
-//     var day = date_.slice(8, 10);
-//     console.log(day);
-//     var parseMont = (monthWording[month]);
-//     var parse = parseFloat(total_cases.replace(/,/g, ""));
-//     var parseTotal = parseInt(parse);
-//     var finalTotal = parseTotal.toLocaleString("id")
-//     var parseCase = parseFloat(newCase.replace(/,/g, ""));
-//     var parseIntCase = parseInt(parseCase);
-//     var finalCase = parseIntCase.toLocaleString("id")
-//     $(".kasusbaru").text(finalTotal);
-//     // $(".nambah").text(finalCase);
-//     // $(".die").text(death);
-//     $(".tanggalnya").text(`${day} ${parseMont} ${year}`);
-//     // console.log("new case", newCase);
-//     // console.log("total", total_cases);
-//     // console.log("death", death);
-//     // if (world) {
-//     //   var data_ = api_[a].date;
-//     //   console.log(typeof data_);
-//     // }
-//     // }
-//   },
-// });
-
-$(".category-airline").click(function () {
-  var id = $(this).attr("id");
-  var toShow = "#show-" + id;
-  console.log(toShow);
-  $(".airline-content").not(toShow).hide();
-  $(toShow).fadeIn("slow");
-  $(".twox").show();
-
-  if ($(".detail-refund").children().hasClass("open")){
-    $(toShow).removeClass("open").addClass("close-info").slideDown(function(){
-      $('html, body').animate({
-            scrollTop: $(".refund").offset().top + 20
-        });
+                  
+                  <li>
+                      <div class="content">
+                    <h3>Absolutely nothing.</h3>
+                    
+                
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
+                    </p>
+                    </div>
+                  </li>
+                </ul>
+                
+                    
+                
+              </div>
+    
+            </div>
+            </div>
+        `);
     });
-    console.log("harus fade")
-  }
 
-  if ($(".detail-refund").children().hasClass("close-info")) {
-    $(toShow)
-      .removeClass("close-info")
-      .addClass("open")
-      .slideDown(function () {
-        $("html, body").animate({
-          scrollTop: $(".refund").offset().top + 20,
-        });
-      });
-    console.log("harus slide");
-  }
-
-  $('.detail-refund ul li.category-detail').removeClass("activeMenu");
-  $('.detail-refund ul li.category-detail:first-child').addClass("activeMenu");
-  // $('.wrapper-box').css("display","block");
-  $('.wrapper-box').css("display","none");
-  $(toShow).children('.wrapper-box').first().css("display","block")
-});
-
-$('.detail-refund ul li.category-detail').click(function() {
-  var id = $(this).attr('id');
-  var toShow = '#show-' + id;
-  $('.wrapper-box').not(toShow).hide();
-  $(toShow).fadeIn().removeAttr('hidden');
-});
-
-$('.detail-refund ul li.category-detail').click(function() {
-  $('.detail-refund ul li.category-detail').removeClass("activeMenu");
-        $(this).addClass("activeMenu");
-});
-
-$(".closer").click(() => {
-  $(".airline-content").removeClass("open").addClass("close-info");
-  $(".twox").fadeOut();
-  $(".airline-name").removeClass("bg-category");
-  $(".airline-content") /*.fadeOut()*/
-    .fadeOut();
-    $("html, body").animate({
-      scrollTop: $(".contentx").offset().top + 20,
-    })
-});
-
-$(".category-click .airline-name").click(function () {
-  $(".category-click .airline-name").removeClass("bg-category");
-  $(this).addClass("bg-category");
-});
-
-// let bg = document.getElementById("dpr");
-// let moon = document.getElementById("one");
-// let mountain = document.getElementById("two");
-// let road = document.getElementById("demo");
-
-// window.addEventListener("scroll", function () {
-//   var value = window.scrollY;
-//   // console.log("value", value);
-//   bg.style.bottom = value * 1 + "px";
-//   // moon.style.bottom = -value + 10 + "%";
-//   // moon.style.left = -value + 5 + "%";
-//   // moon.style.transform = scale(1.2);
-//   // mountain.style.bottom = -value + 10 + "%";
-//   road.style.bottom = value * 0.05 + "px";
-//   // console.log(".bg.style.top", bg.style.top);
-//   // console.log("moon.style.top", moon.style.top);
-//   // text.style.top = value * 1 + "px";
-// });
+  })
+})
