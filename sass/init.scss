@@ -343,3 +343,10 @@ main {
     font-style: italic;
   }
 }
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(0, -50%);
+}
