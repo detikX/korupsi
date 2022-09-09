@@ -146,6 +146,10 @@ section {
       width: 250px;
       height: 250px;
 
+      @media screen and (max-width:766px) {
+        display: none;
+      }
+
       &.top {
         bottom: initial;
         top: 20%;
@@ -155,7 +159,7 @@ section {
 
       &.right {
         bottom: initial;
-        bottom: 35%;
+        bottom: 45%;
         left: initial;
         right: -30%;
         animation: MoveRight 7.5s linear infinite;
