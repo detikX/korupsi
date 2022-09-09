@@ -244,6 +244,10 @@ section {
 
         small {
           color: #6a3f00;
+
+          @media screen and (max-width:766px) {
+            font-size: 12px;
+          }
         }
 
         p {
@@ -258,7 +262,7 @@ section {
           font-size: 32px;
 
           @media screen and (max-width:766px) {
-            font-size: 20px;
+            font-size: 16px;
           }
         }
 
@@ -267,7 +271,7 @@ section {
           font-size: 18px;
 
           @media screen and (max-width:766px) {
-            font-size: 16px;
+            font-size: 14px;
           }
         }
       }
@@ -291,12 +295,17 @@ section {
   }
 
   @media(max-width: 800px) {
+
     .grid {
       column-count: 3;
     }
   }
 
   @media(max-width: 766px) {
+    hr {
+      margin: 4px 0;
+    }
+
     .grid {
       column-count: 1;
     }
@@ -327,6 +336,10 @@ section {
   border-radius: 25px;
   transition: .3s;
   box-shadow: 0 0 0 1px black inset, 2px 1px 6px rgb(0 0 0 / 22%) !important;
+
+  @media screen and (max-width:766px) {
+    font-size: 12px;
+  }
 
   &:hover {
     background: #AC6600;
@@ -866,7 +879,7 @@ section {
   .timeline-list li {
     list-style: none;
     margin: 0 0 3em 0;
-    padding: 0 2em 0em 2em;
+    padding: 0 2em 0em 0em;
     position: relative;
 
   }
