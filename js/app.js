@@ -77,8 +77,10 @@ $.ajax({
       $(".grid").append(
         `
         <div class="grid__item">
+          
           <div class="image"><img src="${img}"></div>
           <div class="details">
+          
             <div class="name">${name}</div>
             <div class="ex">${ex}</div>
             <small class="font-bold">${hukuman} Penjara</small>

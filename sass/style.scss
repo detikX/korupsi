@@ -82,6 +82,36 @@ section {
   // background: #ef5200;
   // background: #ff7b00;
   .introducing {
+    position: relative;
+
+    &__left {
+      position: absolute;
+      left: -64px;
+      top: 20px;
+      width: 100px;
+      height: 100px;
+
+      @media screen and (max-width:766px) {
+        left: -30px;
+        top: -16px;
+      }
+    }
+
+    &__right {
+      position: absolute;
+      right: -64px;
+      top: 20px;
+      width: 100px;
+      height: 100px;
+      transform: rotate(180deg);
+
+      @media screen and (max-width:766px) {
+        right: -20px;
+        top: -16px;
+      }
+    }
+
+
     p {
       font-size: 18px;
     }
@@ -106,7 +136,35 @@ section {
     column-gap: .5em;
     // max-width: 980px;
     margin: auto;
+    position: relative;
     width: 100%;
+
+    &__help {
+      position: absolute;
+      left: -30%;
+      bottom: 0%;
+      width: 250px;
+      height: 250px;
+
+      &.top {
+        bottom: initial;
+        top: 20%;
+        left: -20%;
+      }
+
+      &.right {
+        bottom: initial;
+        top: 5%;
+        left: initial;
+        right: -30%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
 
     &__item {
       position: relative;
@@ -503,7 +561,8 @@ section {
   position: relative;
   z-index: 80;
   // background: #c3c4c5;
-  background: #ee5000;
+  // background: #ee5000;
+  background: #ff6a14;
 
   // background-color: #2d3436;
   // background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
@@ -524,11 +583,16 @@ section {
 
   .name,
   .jobdesc {
-    color: white;
+    color: black;
+    font-weight: bold;
 
     @media screen and (max-width: 766px) {
       font-size: 14px;
     }
+  }
+
+  .name {
+    // font-weight: bold;
   }
 
   .jobdesc {
@@ -536,7 +600,7 @@ section {
     margin: 8px 0 0;
     // text-decoration: underline;
     // border-bottom: 1px solid;
-    color: #dfdfdf;
+    color: #111;
   }
 }
 
