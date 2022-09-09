@@ -181,3 +181,10 @@ $.ajax({
 
   })
 })
+
+$(".scroll-down").click(() => {
+  $('html, body').animate({
+    scrollTop: $("#first").offset().top
+  }, 500);
+
+})

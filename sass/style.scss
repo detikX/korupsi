@@ -155,9 +155,22 @@ section {
 
       &.right {
         bottom: initial;
-        top: 5%;
+        bottom: 35%;
         left: initial;
         right: -30%;
+        animation: MoveRight 7.5s linear infinite;
+      }
+
+      @keyframes MoveRight {
+
+        0%,
+        100% {
+          right: -30%;
+        }
+
+        50% {
+          right: -25%;
+        }
       }
 
       @keyframes MoveDown {
@@ -166,8 +179,6 @@ section {
         100% {
           top: 20%;
         }
-
-
 
         50% {
           top: 25%;
@@ -967,4 +978,8 @@ section {
 
     }
   }
+}
+
+.scroll-down {
+  cursor: pointer;
 }
