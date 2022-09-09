@@ -17,7 +17,8 @@ sans-serif;
 
 section {
   // background: #fe6515;
-  background: #ff8545;
+  // background: #ff8545; orange KPK
+  background: #ff854533;
   position: relative;
   // color: red;
 
@@ -65,7 +66,7 @@ section {
     h1 {
       color: #000;
       font-weight: bold;
-      font-size: 58px;
+      font-size: 52px;
     }
   }
 
@@ -73,8 +74,14 @@ section {
 
 .contents {
   position: relative;
+
   // background: #ef5200;
   // background: #ff7b00;
+  .introducing {
+    p {
+      font-size: 18px;
+    }
+  }
 
   &__help {
     position: absolute;
@@ -607,7 +614,7 @@ section {
   .block-content h2 {
 
     text-align: center;
-    margin: 1em 0 0 0;
+    margin: .2em 0 0 0;
     font-size: 2.5em;
     line-height: 1;
     letter-spacing: 0.02em;
@@ -622,14 +629,14 @@ section {
 
     font-family: $fontstack_heading;
     font-weight: 300;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 0.5em 0;
   }
 
   .heading-group {
-    margin: 0 0 3em 0;
+    margin: 0 0 .5em 0;
   }
 
   .content h3 {

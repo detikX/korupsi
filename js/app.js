@@ -118,7 +118,7 @@ $.ajax({
                 <ul class="timeline-list">
                   <li>
                       <div class="content">
-                    <h3>A timeline?</h3>
+                    <h3>2018</h3>
                 
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
@@ -127,7 +127,7 @@ $.ajax({
                   </li>
                   <li>
                       <div class="content">
-                    <h3>A railway map?</h3>
+                    <h3>2019</h3>
                   
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
@@ -136,7 +136,7 @@ $.ajax({
                   </li>
                   <li>
                       <div class="content">
-                    <h3>Random dots?</h3>
+                    <h3>2020</h3>
                   
                 
                     <p>
@@ -149,7 +149,7 @@ $.ajax({
                   
                   <li>
                       <div class="content">
-                    <h3>Absolutely nothing.</h3>
+                    <h3>Saat Ini</h3>
                     
                 
                     <p>
