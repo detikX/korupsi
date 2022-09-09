@@ -350,3 +350,21 @@ main {
   bottom: 0;
   transform: translate(0, -50%);
 }
+
+.close_ {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  cursor: pointer;
+  z-index: 43;
+  padding-top: 2px;
+
+  i {
+    font-size: 22px;
+  }
+}

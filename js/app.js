@@ -105,6 +105,9 @@ $.ajax({
       $("#modalKoruptor .modal-content").html(`
             <div class="modal-body">
             <div class="block-content t-block-teal l-block-spacing">
+            <div class="close_" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </div>
             <header class="heading-group">
               <div class="image-org">
                 <img src="${img}">
@@ -162,8 +165,12 @@ $.ajax({
                     
                 
               </div>
-    
+              <div class="text-center mx-auto">
+              <button class="btn btn-modal" data-dismiss="modal">Tutup</button>
             </div>
+            </div>
+
+           
             </div>
         `);
     });
