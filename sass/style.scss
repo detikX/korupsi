@@ -3,9 +3,13 @@ $max: 766px;
 $primary: #fafafa;
 $orange: #f7941f;
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,900);
-$fontstack_heading: "Merriweather",
+// $fontstack_heading: "Merriweather",
+// sans-serif;
+// $fontstack_body: "Merriweather",
+// sans-serif;
+$fontstack_heading: "Montserrat",
 sans-serif;
-$fontstack_body: "Merriweather",
+$fontstack_body: "Montserrat",
 sans-serif;
 
 @font-face {
@@ -647,7 +651,7 @@ section {
 
     @media all and (min-width:40em) {
 
-      font-size: 2.5em;
+      font-size: 1.8em;
 
     }
   }
