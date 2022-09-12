@@ -197,3 +197,7 @@ $("#cekit").click(()=>{
     scrollTop: $(".contents").offset().top
   }, 500);
 })
+
+$(".to-up").click(()=>{
+  $("html, body").animate({ scrollTop: 0 });
+})
