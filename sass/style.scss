@@ -27,7 +27,7 @@ section {
   // color: red;
 
   padding: 32px 0;
-  z-index: 30;
+  z-index: 60;
 
   // text-align: justify;
   h2 {
@@ -79,6 +79,7 @@ section {
 .contents {
   position: relative;
 
+  z-index: 2;
   // background: #ef5200;
   // background: #ff7b00;
   .introducing {
@@ -118,11 +119,14 @@ section {
   }
 
   &__help {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: .1;
+    z-index: 2;
+    // z-index: ;
 
     img {
       width: 100%;
@@ -162,18 +166,26 @@ section {
         bottom: 45%;
         left: initial;
         right: -30%;
-        animation: MoveRight 7.5s linear infinite;
+        animation: MoveRight 3.5s linear infinite;
       }
 
       @keyframes MoveRight {
 
         0%,
         100% {
-          right: -30%;
+          opacity: 1;
         }
 
         50% {
-          right: -25%;
+          opacity: .5;
+        }
+
+        30% {
+          opacity: .3;
+        }
+
+        70% {
+          opacity: .7;
         }
       }
 
@@ -354,11 +366,13 @@ section {
 
 .paragraph {
   // padding-top: 0;
-  // background: #06264d;
+  // background: #ff8545;
   position: relative;
   z-index: 80;
 
   .wrap-detik {
+    position: relative;
+    z-index: 81;
     @media screen and (max-width: 766px) {
       margin: 0 16px;
     }
@@ -630,7 +644,7 @@ section {
 
   .name,
   .jobdesc {
-    color: black;
+    color: white;
     font-weight: bold;
 
     @media screen and (max-width: 766px) {
@@ -645,9 +659,10 @@ section {
   .jobdesc {
     font-size: 14px;
     margin: 8px 0 0;
+    font-weight: 100;
     // text-decoration: underline;
     // border-bottom: 1px solid;
-    color: #111;
+    // color: #111;
   }
 }
 
