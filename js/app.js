@@ -188,3 +188,12 @@ $(".scroll-down").click(() => {
   }, 500);
 
 })
+
+
+$(".contents").hide()
+$("#cekit").click(()=>{
+  $(".contents").fadeIn()
+  $('html, body').animate({
+    scrollTop: $(".contents").offset().top
+  }, 500);
+})
