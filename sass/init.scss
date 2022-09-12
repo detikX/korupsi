@@ -366,6 +366,13 @@ main {
   cursor: pointer;
   z-index: 43;
   padding-top: 2px;
+  transition: .3s;
+  &:hover {
+    background: black;
+    i {
+      color: white;
+    }
+  }
 
   i {
     font-size: 22px;
