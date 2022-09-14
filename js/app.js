@@ -90,7 +90,9 @@ $.ajax({
           <div class="details">
           
             <div class="name">${name}</div>
-            <div class="ex" hidden>${ex}</div>
+            <br>
+            <div class="ex">Eks ${ex}</div>
+            <br>
             <button class="btn btn-modal namaKoruptor" data-toggle="modal" data-target="#modalKoruptor" data-id="${id_}">Simak Kasusnya</button>
           </div>
         </div>
