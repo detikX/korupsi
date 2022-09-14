@@ -98,7 +98,7 @@ $.ajax({
       // console.log(dataID);
       // console.log(response[dataID].modal);
       var modal = response[dataID].modal;
-      var img = response[dataID].img;
+      var img = response[dataID].imgmodal;
       var ex = response[dataID].ex;
       var namanya = response[dataID].nama;
       var usia = response[dataID].usia;
