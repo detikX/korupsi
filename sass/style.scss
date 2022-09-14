@@ -111,7 +111,7 @@ section {
 
 .contents {
   position: relative;
-
+  padding: 0 0 32px;
   z-index: 2;
   // background: #ef5200;
   // background: #ff7b00;
@@ -124,27 +124,27 @@ section {
     &__left {
       position: absolute;
       left: -64px;
-      top: 20px;
+      top: 0px;
       width: 100px;
       height: 100px;
 
       @media screen and (max-width:766px) {
         left: -30px;
-        top: -16px;
+        top: -80px;
       }
     }
 
     &__right {
       position: absolute;
       right: -64px;
-      top: 20px;
+      top: 0px;
       width: 100px;
       height: 100px;
       transform: rotate(180deg);
 
       @media screen and (max-width:766px) {
         right: -20px;
-        top: -16px;
+        top: -80px;
       }
     }
 
