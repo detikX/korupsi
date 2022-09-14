@@ -3,90 +3,129 @@
     "id": 1,
     "nama": "Pinangki Sirna Malasari",
     "ex": "Jaksa",
-    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "short": "Eks Kepala Sub Bagian Pemantauan dan Evaluasi II Biro Perencanaan Jaksa Agung Muda Pembinaan Kejaksaan Agung",
     "img": "img/1.jpeg",
-    "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "9 Tahun"
+    "hukuman": "10 Tahun",
+    "usia":"41 Tahun",
+    "ttl":"Yogyakarta, Banten, 21 April 1981",
+    "case":"Kasus suap dari buronan koruptor Djoko Tjandra sebesar USD 5.000 dan pencucian uang USD 444.900 tahun 2019.",
+    "lapas":"Lapas Kelas IIA Tangerang, Banten."
   },
   {
     "id": 2,
     "nama": "Ratu Atut Chosiyah",
     "ex": "Gubernur Banten",
-    "short": "Eks Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "short": "Kasus suap Akil Mochtar Rp 1 miliar dalam perkara sengketa Pilkada Lebak tahun.",
     "img": "img/2.jpg",
-    "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "8 Tahun"
+    "hukuman": "8 Tahun",
+    "usia":"60 Tahun",
+    "ttl":"Serang, Banten, 16 Mei 1962",
+    "case":"Kasus korupsi pengadaan alat kesehatan di Kota Tangerang Selatan tahun 2013. Kerugian negara Rp 79,7 miliar.",
+    "lapas":"Lapas Kelas IIA Tangerang, Banten."
   },
   {
+    
     "id": 3,
-    "nama": "Mirwati Basri",
+    "nama": "Syahrul Raja Sampurnajaya",
     "ex": "Jaksa",
-    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "short": "Kasus korupsi, pemerasan dan gratifikasi senilai Rp 10,175 miliar.",
     "img": "img/3.jpg",
     "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "8 Tahun"
+    "hukuman": "8 Tahun dan denda Rp 800 juta",
+    "usia":"68 Tahun",
+    "ttl":"Lampung, 20 Oktober 1954",
+    "case":"Kasus korupsi pengadaan alat kesehatan di Kota Tangerang Selatan tahun 2013. Kerugian negara Rp 79,7 miliar.",
+    "lapas":"Lapas Kelas I Sukamiskin, Bandung, Jawa Barat."
   },
   {
     "id": 4,
     "nama": "Desi Aryani",
     "ex": "Direktur Utama PT Jasa Marga",
-    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "short": "Kasus korupsi pekerjaan subkontraktor fiktif tahun 2009-2013 yang merugika negara Rp 202 miliar",
     "img": "img/4.jpg",
     "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "10 Tahun"
+    "hukuman": "4 Tahun dan denda Rp 200 juta",
+    "usia":"59 Tahun",
+    "ttl":"29 Desember 1962",
+    "case":"Kasus korupsi pengadaan alat kesehatan di Kota Tangerang Selatan tahun 2013. Kerugian negara Rp 79,7 miliar.",
+    "lapas":"Lapas Kelas I Sukamiskin, Bandung, Jawa Barat."
   },
   {
     "id": 5,
     "nama": "Supendi",
-    "ex": "Bupati Indramayu",
-    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "ex": "Bupati Indramayu dan Ketua DPD Golkar Indramayu",
+    "short": "Kasus korupsi proyek di Dinas Pekerjaan Umum Kabupaten Indramayu senilai Rp 15 miliar",
     "img": "img/10.jpeg",
     "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "8 Tahun"
+    "hukuman": "4,5 Tahun dan denda Rp 250 juta",
+    "usia":"59 Tahun",
+    "ttl":"29 Desember 1962",
+    "case":"Vonis 4,5 tahun, denda Rp 250 juta dan diharuskan membayar uang pengganti Rp 1,08 miliar subsider 1 tahun penjara oleh Pengadilan Tipikor tahun 2020.",
+    "lapas":"Lapas Kelas 1 Sukamiskin, Bandung, Jawa Barat."
   },
   {
     "id": 6,
     "nama": "Patrialis Akbar",
-    "ex": "Direktur Utama PT Jasa Marga",
-    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "ex": "Eks Hakim Mahkamah Konstitusi dan Menteri Hukum dan HAM",
+    "short": "Kasus suap perkara uji materi UU Nomor 41 Tahun 2014 tentang Peternakan dan Kesehatan Hewan tahun 2017.",
     "img": "img/5.jpg",
     "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "18 Tahun"
+    "hukuman": "8 Tahun",
+    "usia":"59 Tahun",
+    "ttl":"Padang, Sumatera Barat 31 Oktober 1958",
+    "case":"Menerima suap US 10 ribu dollar dan Rp 4 juta dari Basuki Hariman (Bos PT Impexindo Pratama) dan Ng Fenny",
+    "lapas":"Lapas Kelas I Sukamiskin, Bandung, Jawa Barat."
   },
   {
     "id": 7,
     "nama": "Suryadharma Ali",
-    "ex": "Menteri Agama",
-    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "ex": "Eks Menteri Agama RI dan Ketua Umum Partai Persatuan Pembangunan (PPP)",
+    "short": "Kasus korupsi dana haji tahun 2012-2013.",
     "img": "img/6.jpeg",
     "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "8 Tahun"
+    "hukuman": "10 Tahun",
+    "usia":"66 Tahun",
+    "ttl":"Jakarta, 19 September 1956",
+    "case":"Kerugian negara Rp 27,283 miliar dan 17,96 juta Riyal Saudi.",
+    "lapas":"Lapas Kelas I Sukamiskin, Bandung, Jawa Barat."
   },
   {
     "id": 8,
     "nama": "Zumi Zola",
     "ex": "Gubernur Jambi",
-    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "short": "Kasus gratifikasi Rp 37,47 juta, USD 173.300, SGD 100.000 dan 1 unit Toyota Alphard (2016-2019).",
     "img": "img/7.jpg",
     "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "8 Tahun"
+    "hukuman": "6 Tahun dan denda Rp 500 juta",
+    "usia":"42 Tahun",
+    "ttl":"Jakarta, 31 Maret 1980",
+    "case":"Kasus suap kepada 53 anggota DPRD Jambi periode 2014-2019 sebesar Rp 16,34 miliar.",
+    "lapas":"Lapas Kelas I Sukamiskin, Bandung, Jawa Barat."
   },
   {
     "id": 9,
-    "nama": "Ojang",
+    "nama": "Ojang Sohandi",
     "ex": "Bupati Subang",
-    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "short": "Kasus korupsi dana APBD Subang sebesar Rp 60 miliar tahun 2016.",
     "img": "img/8.jpg",
     "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "8 Tahun"
+    "hukuman": "8 Tahun dan denda Rp 300 juta",
+    "usia":"44 Tahun",
+    "ttl":"27 Juli 1978",
+    "case":"Kasus korupsi dana APBD Subang sebesar Rp 60 miliar tahun 2016.",
+    "lapas":"Lapas Kelas I Sukamiskin, Bandung, Jawa Barat."
   },
   {
     "id": 10,
     "nama": "Irvan Rivano Muchtar",
     "ex": "Bupati Cianjur",
-    "short": "Ex Jaksa dengan kasus yang melibatkan Djoko Tjondro",
+    "short": "Kasus korupsi pemotongan dana alokasi khusus (DAK) Dinas Pendidikan Kabupaten Cianjur sebesar 14,5 persen dari total Rp 46,8 miliar tahun 2018.",
     "img": "img/9.jpeg",
     "modal": "<p>Lorem ipsum</p>",
-    "hukuman": "8 Tahun"
+    "hukuman": "5 Tahun dan denda Rp 250 juta",
+    "usia":"42 Tahun",
+    "ttl":"27 Agustus 1980",
+    "case":"Kasus korupsi pemotongan dana alokasi khusus (DAK) Dinas Pendidikan Kabupaten Cianjur sebesar 14,5 persen dari total Rp 46,8 miliar tahun 2018.",
+    "lapas":"Lapas Kelas I Sukamiskin, Bandung, Jawa Barat."
   }
 ]

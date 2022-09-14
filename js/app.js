@@ -83,7 +83,7 @@ $.ajax({
           
             <div class="name">${name}</div>
             <div class="ex">${ex}</div>
-            <small class="font-bold">${hukuman} Penjara</small>
+            <small class="font-bold">${hukuman}</small>
             <hr>
             <p>${short}</p>
             <button class="btn btn-modal namaKoruptor" data-toggle="modal" data-target="#modalKoruptor" data-id="${id_}">Simak Kasusnya</button>
@@ -101,9 +101,14 @@ $.ajax({
       var img = response[dataID].img;
       var ex = response[dataID].ex;
       var namanya = response[dataID].nama;
-      // var sumber = response[dataID].sumber;
-      // <div class="modal-image"><img src="${img}" alt="${namanya}" title="${namanya}" loading="lazy" /></div>
-      //           <p class="font-stdbig">${modal}</p>
+      var usia = response[dataID].usia;
+      var ttl = response[dataID].ttl;
+      var short = response[dataID].short;
+      var case_ = response[dataID].case;
+      var lapas = response[dataID].lapas;
+      var hukuman = response[dataID].hukuman;
+      var checking = (short === case_) ? "" : short
+
       $("#modalKoruptor").modal("show");
 
       $("#modalKoruptor .modal-content").html(`
@@ -125,44 +130,34 @@ $.ajax({
                 <ul class="timeline-list">
                   <li>
                       <div class="content">
-                    <h3>2018</h3>
-                
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
-                    </p>
-                    </div>
+                        <h3>Usia</h3>
+                        <div class="color-white font-bold">${usia}</div>
+                        <div class="color-white">${ttl}</div>
+                      </div>
                   </li>
                   <li>
                       <div class="content">
-                    <h3>2019</h3>
-                  
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
-                    </p>
-                    </div>
+                        <h3>Kasus</h3>
+                        <p>
+                          ${checking} ${case_}
+                        </p>
+                      </div>
                   </li>
                   <li>
                       <div class="content">
-                    <h3>2020</h3>
-                  
-                
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
-                    </p>
-                    </div>
+                        <h3>Hukuman Penjara</h3>
+                        <p>
+                          ${hukuman}
+                        </p>
+                      </div>
                   </li>
-                  
-    
-                  
                   <li>
                       <div class="content">
-                    <h3>Saat Ini</h3>
-                    
-                
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
-                    </p>
-                    </div>
+                        <h3>Lapas</h3>
+                        <p>
+                          ${lapas}
+                        </p>
+                      </div>
                   </li>
                 </ul>
                 
