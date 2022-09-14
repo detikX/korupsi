@@ -270,6 +270,7 @@ section {
         padding: 8px;
         p {
           color: white;
+          font-size: 14px;
         }
         small {
           // color: #6a3f00;
@@ -372,20 +373,20 @@ section {
 }
 
 .btn-modal {
-  border: transparent;
-  background: white;
-  font-weight: 700;
-  border-radius: 25px;
+  border: transparent !important;
+  background: white !important;
+  font-weight: 700 !important;
+  border-radius: 25px !important;
   transition: .3s;
   box-shadow: 0 0 0 1px black inset, 2px 1px 6px rgb(0 0 0 / 22%) !important;
 
   @media screen and (max-width:766px) {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   &:hover {
-    background: #AC6600;
-    color: #fff;
+    background: #AC6600 !important;
+    color: #fff !important;
     box-shadow: none !important;
   }
 
@@ -894,7 +895,8 @@ section {
     &:before {
       content: "";
       border-left: 5px solid #FF965D;
-      left: -0.25em;
+      // left: -0.25em;
+      left: -23px;
       top: 2em;
       height: 100%;
       position: absolute;
@@ -902,6 +904,9 @@ section {
       top: 0;
       transform-origin: 0 0;
       animation: scaleVertical 3s 1s ease both 1;
+      @media screen and (max-width:766px) {
+        left: -12px;
+      }
     }
 
     &:after {
@@ -910,7 +915,7 @@ section {
 
       position: absolute;
       bottom: 0px;
-      left: -.7em;
+      left: -32px;
       width: 20px;
       height: 20px;
       border-radius: 50%;
@@ -918,6 +923,9 @@ section {
       border: 5px solid #DDD;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
       animation: revealScaleUp 0.75s 2.82s ease both 1;
+      @media screen and (max-width:766px) {
+        left: -19px;
+      }
     }
   }
 
@@ -943,7 +951,7 @@ section {
   //the border must also animate in.
   .timeline-list li {
     list-style: none;
-    margin: 0 0 3em 0;
+    margin: 0 0 24px 0;
     padding: 0 2em 0em 0em;
     position: relative;
 
@@ -954,13 +962,17 @@ section {
     content: "";
     position: absolute;
     top: 0px;
-    left: -3.5em;
+    // left: -3.5em;
+    left: -36px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: none repeat scroll 0% 0% #943400;
     border: 5px solid #fff;
     animation: revealScaleUp 0.75s 0s ease both 1;
+    @media screen and (max-width:766px) {
+      left: -25px;
+    }
   }
 
   .timeline-list {
@@ -970,6 +982,7 @@ section {
 
   .timeline-list li .content {
     animation: revealFromLeft 0.5s 0s ease both 1;
+    margin-left: 16px;
   }
 
 
@@ -1074,7 +1087,7 @@ section {
 .btn-cek {
   cursor: pointer;
 	font-size: 20px;
-  font-weight: bold;
+  font-weight: bold !important;
 	// font-family: 'Staatliches', cursive;
 	// letter-spacing: 5px;
 	background: #ff8814;
@@ -1115,4 +1128,20 @@ section {
 	75% {transform: translateX(-85px) translateY(-35px);
 			width: 15px;
 			height: 15px;}
+}
+
+#nav {
+  display: none !important;
+}
+
+hr {
+  margin: 4px 0 !important;
+}
+
+#logo {
+  display: none !important;
+}
+
+.tunggu {
+  font-weight: bold;
 }

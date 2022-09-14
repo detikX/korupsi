@@ -64,6 +64,14 @@ $(() => {
 $.ajax({
   url: 'js/data.json',
   type: 'GET',
+  beforeSend: function(){
+    $(".tunggu").show();
+
+},
+complete: function(){
+    $(".tunggu").hide();
+
+},
   success: ((response) => {
     // console.log(response);
     var a;
