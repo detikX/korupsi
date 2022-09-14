@@ -63,6 +63,7 @@ $(() => {
 
 $.ajax({
   url: 'js/data.json',
+  // url:'https://detikx.github.io/korupsi/js/data.json',
   type: 'GET',
 //   beforeSend: function(){
 //     $(".tunggu").show();
@@ -128,7 +129,7 @@ $.ajax({
               <div class="image-org">
                 <img src="${img}">
               </div>
-              <h2>${ex}</h2>
+              <h2>Eks ${ex}</h2>
               <p class="subtitle">
                 ${namanya}
               </p>
