@@ -48,9 +48,16 @@ section {
 }
 
 .banner {
-  height: 80vh;
+  height: 100vh;
   position: relative;
   padding: 0;
+  @media screen and (min-width:1440px) {
+    height: 80vh;
+  }
+
+  @media screen and (max-width:766px) {
+    height: 80vh;
+  }
 
   .sumbers {
     font-size: 12px;
@@ -79,6 +86,7 @@ section {
       text-align: center;
       font-size: 52px;
       text-shadow: 2px 2px #ff6a14;
+      font-family: 'Montserrat' !important;
       @media screen and (max-width:766px) {
         
         font-size: 38px;
