@@ -64,14 +64,14 @@ $(() => {
 $.ajax({
   url: 'js/data.json',
   type: 'GET',
-  beforeSend: function(){
-    $(".tunggu").show();
+//   beforeSend: function(){
+//     $(".tunggu").show();
 
-},
-complete: function(){
-    $(".tunggu").hide();
+// },
+// complete: function(){
+//     $(".tunggu").hide();
 
-},
+// },
   success: ((response) => {
     // console.log(response);
     var a;
@@ -90,8 +90,8 @@ complete: function(){
           <div class="details">
           
             <div class="name">${name}</div>
-            <div class="ex">${ex}</div>
-            <small class="font-bold">${hukuman}</small>
+            <div class="ex" hidden>${ex}</div>
+            <small class="font-bold" hidden>${hukuman}</small>
             <hr>
             <p>${short}</p>
             <button class="btn btn-modal namaKoruptor" data-toggle="modal" data-target="#modalKoruptor" data-id="${id_}">Simak Kasusnya</button>
